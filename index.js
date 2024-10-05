@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
-app.use(cors());
+
 
 let app = express();
 const port = 3000;
-
+app.use(cors());
 app.use(express.static('static'));
 
 let taxRate = 5;
